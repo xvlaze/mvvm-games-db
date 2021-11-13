@@ -36,14 +36,11 @@ class MainActivity: AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        /*
-        Creamos el ViewModel que nos ayudará a actualizar la UI.
-        */
         viewModel = ViewModelProvider(
-            this, // Es para esta actividad.
-            MainViewModel.MyViewModelFactory(application) // No podemos instanciar el ViewModel direcatmente, necesitamos una Factory.
+            this,
+            MainViewModel.MyViewModelFactory(application)
         ).get(
-            MainViewModel::class.java) // ?
+            MainViewModel::class.java)
 
         setSupportActionBar(binding.toolbar)
 
@@ -117,18 +114,14 @@ class MainActivity: AppCompatActivity() {
         viewModel.currentFragment.observe(this, { fragmentId ->
             when (fragmentId) {
                 R.id.gameListFragment -> {
-                    binding.fragmentName.text = "All Games"
+                    binding.fragmentName.text = getString(R.string.all_games)
                 }
                 R.id.wishlistFragment -> {
-                    binding.fragmentName.text = "Wishlist"
+                    binding.fragmentName.text = getString(R.string.wishlist)
                 }
             }
         })
 
-        /*
-        Llamamos a la función que queremos que lance el ViewModel. Esto puede hacerse al clic de un botón, etc. En esta app
-        queremos que se ejecute al inicio, así que la ponemos aquí mismo.
-         */
         viewModel.setup()
     }
 

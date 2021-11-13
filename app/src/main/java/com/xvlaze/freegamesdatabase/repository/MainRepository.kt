@@ -6,7 +6,6 @@ import androidx.annotation.RequiresApi
 import com.xvlaze.freegamesdatabase.api.RetrofitService
 import com.xvlaze.freegamesdatabase.model.Wishlist
 
-// Esto implementa las funciones de la API que hemos declarado en RetrofitService.kt
 class MainRepository (private val retrofitService: RetrofitService, private val c: Context) {
 
     fun retrieveGamelist() = retrofitService.retrieveGamelist()

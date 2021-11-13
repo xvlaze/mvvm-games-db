@@ -27,14 +27,11 @@ class InfoActivity: AppCompatActivity() {
         binding = ActivityInfoBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        /*
-        Creamos el ViewModel que nos ayudará a actualizar la UI.
-        */
         viewModel = ViewModelProvider(
-            this, // Es para esta actividad.
-            InfoViewModel.MyViewModelFactory(application) // No podemos instanciar el ViewModel directamente, necesitamos una Factory.
+            this,
+            InfoViewModel.MyViewModelFactory(application)
         ).get(
-            InfoViewModel::class.java) // ?
+            InfoViewModel::class.java)
 
         Picasso.get().load(intent.getStringExtra("game_thumbnail")).into(binding.gameThumbnail)
         id = intent.getIntExtra("id", -1)
@@ -46,7 +43,6 @@ class InfoActivity: AppCompatActivity() {
         binding.gameGenre.text = intent.getStringExtra("game_genre")
         binding.gameGenre.backgroundTintList = intent.getStringExtra("game_genre")?.let { Decorators.colorize(this, it) }
 
-        // Configuramos la recyclerView.
         myAdapter.setOnItemClickListener(object: SuggestionsAdapter.OnItemClickListener {
             override fun onItemClick(position: Int) {
                 viewModel.showGameInfo(myAdapter.getGamesList()[position].getId())
@@ -59,7 +55,6 @@ class InfoActivity: AppCompatActivity() {
         })
 
         viewModel.gameDetail.observe(this, {
-            // TODO Estoy bastante seguro de que no tengo que poner esto aquí. ¿Quizá mejor con un Parcelable o sigo rompiendo la independencia?
             Intent(this, InfoActivity::class.java).apply {
                 putExtra("id", it.getId())
                 putExtra("game_thumbnail", it.getThumbnail())
@@ -88,7 +83,6 @@ class InfoActivity: AppCompatActivity() {
                 intent.getStringExtra("game_genre")
             )
             viewModel.suggestedGames.observe(this, {
-                // Aquí actualizamos la vista (esta actividad).
                 myAdapter.setGamesList(it)
             })
         }

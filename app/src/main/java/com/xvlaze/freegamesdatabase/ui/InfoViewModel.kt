@@ -30,9 +30,9 @@ class InfoViewModel (application: Application): AndroidViewModel(application) {
     val isWishlisted = MutableLiveData<Boolean>()
     val MAX_SUGGESTIONS = 15
 
-    fun retrieveGamelist() { // No importa el nombre que tenga, pero es más fácil de recordar si mantenemos los nombres de método de las funciones de nuestra API.
+    fun retrieveGamelist() {
         val response = repository.retrieveGamelist()
-        response.enqueue(object: Callback<GameResponse> { // TODO: Esto lo tengo que mirar.
+        response.enqueue(object: Callback<GameResponse> {
             override fun onResponse(call: Call<GameResponse>, response: Response<GameResponse>) {
                 val games = ArrayList<Game>()
                 for (gameResponse in response.body()!!) {

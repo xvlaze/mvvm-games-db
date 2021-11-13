@@ -22,8 +22,6 @@ class WishlistFragment : Fragment() {
 
     private lateinit var viewModel: MainViewModel
     private var _binding: WishlistFragmentBinding? = null
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
     private lateinit var adapter: GamesAdapter
 

@@ -21,8 +21,6 @@ class GameListFragment : Fragment() {
 
     private lateinit var viewModel: MainViewModel
     private var _binding: GameListFragmentBinding? = null
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
     lateinit var adapter: GamesAdapter
 
@@ -48,11 +46,8 @@ class GameListFragment : Fragment() {
         binding.progress.visibility = View.VISIBLE
         binding.rvGames.addItemDecoration(Decorators.Decorator(15, true))
 
-        // Definimos qué va a pasar en la vista cuando un elemento del ViewModel cambie; en este caso, la lista que hemos creado (que recibimos de Retrofit) y un código de error.
         viewModel.filteredGameList.observe(viewLifecycleOwner, {
-            // Aquí actualizamos la vista (esta actividad).
             adapter = GamesAdapter(it)
-            // Configuramos la recyclerView.
             adapter.setOnItemClickListener(object: GamesAdapter.OnItemClickListener {
                 override fun onItemClick(position: Int) {
                     viewModel.showGameInfo(adapter.getGamesList()[position].getId())

@@ -16,9 +16,7 @@ interface RetrofitService {
     companion object {
         private var retrofitService: RetrofitService? = null
 
-        // Devuelve la instancia de Retrofit para poder usarla.
         fun getInstance(): RetrofitService {
-            // Si la instancia de Retrofit se ha quedado en null, la creamos de nuevo.
             if (retrofitService == null) {
                 val retrofit = Retrofit.Builder()
                     .baseUrl("https://www.freetogame.com/api/")

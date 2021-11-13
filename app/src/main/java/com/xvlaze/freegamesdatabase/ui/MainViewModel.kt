@@ -34,11 +34,11 @@ class MainViewModel (application: Application): AndroidViewModel(application) {
 
     fun retrieveGamelist() { // No importa el nombre que tenga, pero es más fácil de recordar si mantenemos los nombres de método de las funciones de nuestra API.
         val response = repository.retrieveGamelist()
-        response.enqueue(object: Callback<GameResponse> { // TODO: Esto lo tengo que mirar.
+        response.enqueue(object: Callback<GameResponse> {
             override fun onResponse(call: Call<GameResponse>, response: Response<GameResponse>) {
                 fullGameList.postValue(response.body()?.map { Game(it) } as ArrayList<Game>)
                 filteredGameList.postValue(response.body()?.map { Game(it) } as ArrayList<Game>)
-                // Todo: Algunas se repiten por culpa del desarrollador de la API.
+                // TODO: Algunas se repiten por culpa del desarrollador de la API.
                 genresList.postValue(response.body()?.map { it.genre.trim() }?.distinct() as ArrayList<String>)
             }
 
