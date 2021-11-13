@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/xvlaze/.gradle/caches/transforms-3/1533922a5b3c783710b28793cd849a33/transformed/material-1.4.0/res/drawable/ic_mtrl_chip_checked_black.xml" value="0.3128205128205128" />
+        <entry key="..\:/Users/xvlaze/Desarrollo/Android/AndroidStudioProjects/FreeGamesDatabase/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.225" />
+        <entry key="..\:/Users/xvlaze/Desarrollo/Android/AndroidStudioProjects/FreeGamesDatabase/app/src/main/res/drawable-v24/rounded_categry.xml" value="0.3177083333333333" />
+        <entry key="..\:/Users/xvlaze/Desarrollo/Android/AndroidStudioProjects/FreeGamesDatabase/app/src/main/res/drawable/ic_baseline_bookmark_24.xml" value="0.25833333333333336" />
+        <entry key="..\:/Users/xvlaze/Desarrollo/Android/AndroidStudioProjects/FreeGamesDatabase/app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/xvlaze/Desarrollo/Android/AndroidStudioProjects/FreeGamesDatabase/app/src/main/res/drawable/ic_baseline_favorite_border_24.xml" value="0.3425925925925926" />
+        <entry key="..\:/Users/xvlaze/Desarrollo/Android/AndroidStudioProjects/FreeGamesDatabase/app/src/main/res/drawable/ic_baseline_filter_list_24.xml" value="0.24322916666666666" />
+        <entry key="..\:/Users/xvlaze/Desarrollo/Android/AndroidStudioProjects/FreeGamesDatabase/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.21666666666666667" />
+        <entry key="..\:/Users/xvlaze/Desarrollo/Android/AndroidStudioProjects/FreeGamesDatabase/app/src/main/res/drawable/ic_outline_favorite_border_24.xml" value="0.43020833333333336" />
+        <entry key="..\:/Users/xvlaze/Desarrollo/Android/AndroidStudioProjects/FreeGamesDatabase/app/src/main/res/drawable/rounded_category.xml" value="0.225" />
+        <entry key="..\:/Users/xvlaze/Desarrollo/Android/AndroidStudioProjects/FreeGamesDatabase/app/src/main/res/layout/activity_info.xml" value="0.4" />
+        <entry key="..\:/Users/xvlaze/Desarrollo/Android/AndroidStudioProjects/FreeGamesDatabase/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/xvlaze/Desarrollo/Android/AndroidStudioProjects/FreeGamesDatabase/app/src/main/res/layout/activity_wishlist.xml" value="0.3875" />
+        <entry key="..\:/Users/xvlaze/Desarrollo/Android/AndroidStudioProjects/FreeGamesDatabase/app/src/main/res/layout/blank_fragment.xml" value="0.39895833333333336" />
+        <entry key="..\:/Users/xvlaze/Desarrollo/Android/AndroidStudioProjects/FreeGamesDatabase/app/src/main/res/layout/fragment_game_list.xml" value="0.39895833333333336" />
+        <entry key="..\:/Users/xvlaze/Desarrollo/Android/AndroidStudioProjects/FreeGamesDatabase/app/src/main/res/layout/game_element.xml" value="0.1" />
+        <entry key="..\:/Users/xvlaze/Desarrollo/Android/AndroidStudioProjects/FreeGamesDatabase/app/src/main/res/layout/game_list_fragment.xml" value="0.39895833333333336" />
+        <entry key="..\:/Users/xvlaze/Desarrollo/Android/AndroidStudioProjects/FreeGamesDatabase/app/src/main/res/layout/suggestion_element.xml" value="0.536" />
+        <entry key="..\:/Users/xvlaze/Desarrollo/Android/AndroidStudioProjects/FreeGamesDatabase/app/src/main/res/layout/wishlist_fragment.xml" value="0.399166232412715" />
+        <entry key="..\:/Users/xvlaze/Desarrollo/Android/AndroidStudioProjects/FreeGamesDatabase/app/src/main/res/menu/toolbar.xml" value="0.264" />
+        <entry key="..\:/Users/xvlaze/Desarrollo/Android/AndroidStudioProjects/FreeGamesDatabase/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.12314814814814815" />
+        <entry key="..\:/Users/xvlaze/Desarrollo/Android/AndroidStudioProjects/FreeGamesDatabase/app/src/main/res/xml/searchable.xml" value="0.22685185185185186" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
